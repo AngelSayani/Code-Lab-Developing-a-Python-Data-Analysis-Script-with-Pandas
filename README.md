@@ -10,6 +10,8 @@ workspace/
 │   ├── main/
 │   │   └── python/
 │   │       └── sales_analysis.py
+│   │       └── test_sales_analysis.py
+│   │       └── sales_data.csv
 │   └── resources/
 │       └── sales_data.csv
 └── test/
@@ -63,7 +65,7 @@ In the context of the Code Lab:
 
 - Basic knowledge of Python syntax and functions
 - Familiarity with simple data structures like lists and dictionaries
-- Understanding of basic programming concepts like loops and conditionals
+- Understanding of programming concepts like loops and conditionals
 - No prior experience with pandas or data visualization is required
 
 ### Setup Instructions
