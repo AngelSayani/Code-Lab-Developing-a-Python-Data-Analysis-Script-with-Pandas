@@ -29,6 +29,8 @@ When learners start working on tasks, they'll primarily be editing the `sales_an
 
 ### Setup Instructions
 
+This lab can be run on any environment - Windows (command prompt), Linux or MacOS terminal. Here I've provided the setup instructions for Unix-based systems with Python installed:
+
 1. Make sure you have Python 3.8+ installed
 2. Install required packages:
    ```bash
