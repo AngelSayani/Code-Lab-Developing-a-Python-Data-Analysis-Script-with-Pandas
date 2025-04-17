@@ -87,7 +87,7 @@ In the context of the Code Lab:
 
 5. Run the test script to validate:
    ```bash
-   python src/main/python/test_sales_analysis.py
+   python test/python/test_sales_analysis.py
    ```
 ---
 
