@@ -27,6 +27,37 @@ workspace/
 
 When learners start working on tasks, they'll primarily be editing the `sales_analysis.py` file, implementing the various functions defined in the Code Lab instructions. They'll also be able to run their code to see the output in the terminal and validate their implementations against the provided tests.
 
+### Setup Instructions
+
+1. Make sure you have Python 3.8+ installed
+2. Install required packages:
+   ```bash
+   pip install pandas matplotlib numpy
+   ```
+3. Clone this repository:
+   ```bash
+   git clone https://github.com/AngelSayani/Code-Lab-Developing-a-Python-Data-Analysis-Script-with-Pandas.git
+   cd Code-Lab-Developing-a-Python-Data-Analysis-Script-with-Pandas
+   ```
+4. Run the main script:
+   ```bash
+   python src/main/python/sales_analysis.py
+   ```
+
+5. Run the test script to validate:
+   ```bash
+   python test/python/test_sales_analysis.py
+   ```
+---
+## Getting Started
+
+### Prerequisites
+
+- Basic knowledge of Python syntax and functions
+- Familiarity with simple data structures like lists and dictionaries
+- Understanding of programming concepts like loops and conditionals
+- No prior experience with pandas or data visualization is required
+
 ## File Contents
 
 These files provide a complete foundation for the lab:
@@ -59,35 +90,5 @@ In the context of the Code Lab:
   python test_sales_analysis.py
   ```
 
-## Getting Started
 
-### Prerequisites
-
-- Basic knowledge of Python syntax and functions
-- Familiarity with simple data structures like lists and dictionaries
-- Understanding of programming concepts like loops and conditionals
-- No prior experience with pandas or data visualization is required
-
-### Setup Instructions
-
-1. Make sure you have Python 3.8+ installed
-2. Install required packages:
-   ```bash
-   pip install pandas matplotlib numpy
-   ```
-3. Clone this repository:
-   ```bash
-   git clone https://github.com/AngelSayani/Code-Lab-Developing-a-Python-Data-Analysis-Script-with-Pandas.git
-   cd Code-Lab-Developing-a-Python-Data-Analysis-Script-with-Pandas
-   ```
-4. Run the main script:
-   ```bash
-   python src/main/python/sales_analysis.py
-   ```
-
-5. Run the test script to validate:
-   ```bash
-   python test/python/test_sales_analysis.py
-   ```
----
 
