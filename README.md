@@ -46,7 +46,7 @@ When learners start working on tasks, they'll primarily be editing the `sales_an
 
 5. Run the test script to validate:
    ```bash
-   python test/python/test_sales_analysis.py
+   python src/main/python/test_sales_analysis.py
    ```
 ---
 ## Getting Started
