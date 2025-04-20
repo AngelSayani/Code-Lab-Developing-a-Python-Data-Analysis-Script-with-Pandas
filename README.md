@@ -2,6 +2,15 @@
 
 In this lab, you'll build a data analysis script that reads a CSV file containing sales data, performs analysis, and creates visualizations to extract business insights. The lab walks learners through building a data analysis script step-by-step, with each task focusing on a specific action.
 
+## Getting Started
+
+### Prerequisites
+
+- Basic knowledge of Python syntax and functions
+- Familiarity with simple data structures like lists and dictionaries
+- Understanding of programming concepts like loops and conditionals
+- No prior experience with pandas or data visualization is required
+
 ## File Tree Structure
 
 ```
@@ -52,14 +61,6 @@ This lab can be run on any environment - Windows (command prompt), Linux or MacO
    python src/main/python/test_sales_analysis.py
    ```
 ---
-## Getting Started
-
-### Prerequisites
-
-- Basic knowledge of Python syntax and functions
-- Familiarity with simple data structures like lists and dictionaries
-- Understanding of programming concepts like loops and conditionals
-- No prior experience with pandas or data visualization is required
 
 ## File Contents
 
