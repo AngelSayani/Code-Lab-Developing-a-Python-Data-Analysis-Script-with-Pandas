@@ -33,3 +33,19 @@ By completing this lab, you'll create a reusable analysis tool that will save th
 ## Getting Started
 
 Follow the step-by-step instructions to build your analysis script. By the end of this lab, you'll have a fully functional data pipeline that transforms raw sales data into actionable business intelligence - a valuable skill that's highly sought after at Globomantics and across the industry.
+
+By completing this lab, learners will gain practical experience in:
+
+    Transforming raw data into actionable business intelligence
+    Using pandas for efficient data manipulation
+    Creating visualizations that effectively communicate insights
+    Implementing error handling in data pipelines
+    Building maintainable, well-structured analysis code
+
+Key components of the lab:
+
+    Data loading and cleaning techniques
+    Statistical analysis of sales data
+    Creating informative visualizations
+    Generating summary reports
+    Unit testing to validate code implementation
