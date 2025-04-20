@@ -1,4 +1,4 @@
-# Globomantics Data Analysis Lab
+# Globomantics Data Analysis Lab - Guided: Developing a Python Data Analysis Script with Pandas
 
 ## Background
 
