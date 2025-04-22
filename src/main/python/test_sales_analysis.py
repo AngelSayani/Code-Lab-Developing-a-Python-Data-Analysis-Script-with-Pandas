@@ -24,28 +24,26 @@ class TestDataAnalysis(unittest.TestCase):
 2023-04-05,Headphones,Electronics,150.25,3
 2023-05-12,Jeans,Clothing,45.50,2
 """
-        # Create a temporary file
-        try:
-            self.temp_file = tempfile.NamedTemporaryFile(delete=False, suffix='.csv')
-            with open(self.temp_file.name, 'w') as f:
-                f.write(self.csv_data)
-            print(f"Created temporary test file at: {self.temp_file.name}")
-        except Exception as e:
-            print(f"ERROR creating temp file: {e}")
-            raise
+        # Create a temporary file that can be safely closed
+        self.temp_file = tempfile.NamedTemporaryFile(delete=False, suffix='.csv')
+        self.temp_filename = self.temp_file.name
+        with open(self.temp_filename, 'w') as f:
+            f.write(self.csv_data)
+        self.temp_file.close()  # Close the file to avoid lock issues
+        print(f"Created temporary test file at: {self.temp_filename}")
             
     def tearDown(self):
         # Remove the temporary file
         try:
-            os.unlink(self.temp_file.name)
-            print(f"Removed temporary test file: {self.temp_file.name}")
+            os.unlink(self.temp_filename)
+            print(f"Removed temporary test file: {self.temp_filename}")
         except Exception as e:
             print(f"ERROR removing temp file: {e}")
             
     def test_load_data(self):
         print("\nTesting load_data function...")
         # Test the load_data function
-        df = load_data(self.temp_file.name)
+        df = load_data(self.temp_filename)
         
         # Check that the DataFrame has the expected shape
         self.assertEqual(df.shape, (5, 5), f"Expected shape (5, 5) but got {df.shape}")
