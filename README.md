@@ -98,7 +98,7 @@ In the context of the Code Lab:
 - **Where it belongs**: The content of this test should be placed in the `test_sales_analysis.py` file.
 - **Running the test**: In the lab environment, there would likely be a validation step where this test is run automatically to check the learner's work. The learner can also run the test themselves using a command like:
   ```
-  python test_sales_analysis.py
+  python src/main/python/test_sales_analysis.py
   ```
 
 
