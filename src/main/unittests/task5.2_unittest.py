@@ -2,7 +2,6 @@
 import unittest
 import os
 import sys
-import inspect
 import pandas as pd
 import numpy as np
 
@@ -51,4 +50,60 @@ class TestSalesStatisticsFunction(unittest.TestCase):
         print("\nChecking if sales_statistics is a function...")
         self.assertTrue(callable(sales_statistics), 
                        "sales_statistics is not a function")
-        print
+        print("✓ sales_statistics is correctly defined as a function")
+        
+        # Test the function with our test data
+        print("\nTesting sales_statistics with sample data...")
+        try:
+            stats = sales_statistics(self.test_data)
+            print("✓ Function executed without errors")
+        except Exception as e:
+            print(f"✗ ERROR: Function raised an exception: {e}")
+            print("  SOLUTION: Fix the implementation of sales_statistics")
+            self.fail(f"sales_statistics function raised an exception: {e}")
+        
+        # Check return type
+        print("\nChecking return value...")
+        self.assertIsInstance(stats, dict, 
+                             "sales_statistics should return a dictionary")
+        print("✓ Function correctly returns a dictionary")
+        
+        # Check required statistics
+        print("\nChecking statistics calculations...")
+        required_stats = ['total_sales', 'average_sale', 'max_sale', 'min_sale', 'sale_std_dev']
+        
+        all_stats_present = True
+        for stat in required_stats:
+            if stat in stats:
+                print(f"✓ '{stat}' is included in the statistics")
+            else:
+                print(f"✗ ERROR: '{stat}' is missing from the statistics")
+                all_stats_present = False
+        
+        self.assertTrue(all_stats_present, "Not all required statistics are included")
+        
+        # Check specific values
+        print("\nVerifying statistics calculations...")
+        expected_values = {
+            'total_sales': np.sum(self.test_data['Sales']),
+            'average_sale': np.mean(self.test_data['Sales']),
+            'max_sale': np.max(self.test_data['Sales']),
+            'min_sale': np.min(self.test_data['Sales']),
+            'sale_std_dev': np.std(self.test_data['Sales'], ddof=1)
+        }
+        
+        for stat, expected in expected_values.items():
+            actual = stats[stat]
+            # Allow for floating point precision issues
+            if abs(actual - expected) < 0.01:
+                print(f"✓ '{stat}' is correctly calculated as {actual:.2f}")
+            else:
+                print(f"✗ ERROR: '{stat}' is {actual:.2f}, expected {expected:.2f}")
+                print(f"  SOLUTION: Check the calculation for {stat}")
+                self.assertAlmostEqual(actual, expected, delta=0.01, 
+                                    msg=f"Expected {stat} to be {expected}, got {actual}")
+        
+        print("\nTASK 5.2 COMPLETE! The sales_statistics function works correctly.")
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
