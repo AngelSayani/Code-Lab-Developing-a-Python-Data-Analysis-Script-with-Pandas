@@ -60,6 +60,12 @@ This lab can be run on any environment - Windows (command prompt), Linux or MacO
    ```bash
    python src/main/python/test_sales_analysis.py
    ```
+
+6. To run a unit test for any specific task, run the following command and append with corresponding task number:
+   Example: To run unit test for task 1.1 and task 5.2:
+ ```bash 
+   python src/main/unittests/task1.1_unittest.py
+   python src/main/unittests/task5.2_unittest.py
 ---
 
 ## File Contents
