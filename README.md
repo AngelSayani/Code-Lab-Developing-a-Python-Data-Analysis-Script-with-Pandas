@@ -18,15 +18,26 @@ workspace/
 ├── src/
 │   ├── main/
 │   │   └── python/
-│   │       └── sales_analysis.py
-│   │       └── test_sales_analysis.py
-│   │       └── sales_data.csv
-│   └── resources/
-│       └── unittest_data_load.py
-│       └── sales_data.csv
-└── test/
-    └── python/
-        └── test_sales_analysis.py
+│   │   	├── sales_analysis.py
+│   │   	└── test_sales_analysis.py
+│   └── unittests/
+│   	├── task_1.1_unittest.py
+│   	├── task_1.2_unittest.py
+│   	├── task_1.3_unittest.py
+│   	├── task_2.1_unittest.py
+│   	├── task_2.2_unittest.py
+│   	├── task_3.1_unittest.py
+│   	├── task_3.2_unittest.py
+│   	├── task_3.3_unittest.py
+│   	├── task_4.1_unittest.py
+│   	├── task_4.2_unittest.py
+│   	├── task_4.3_unittest.py
+│   	├── task_5.1_unittest.py
+│   	├── task_5.2_unittest.py
+│   	└── task_5.3_unittest.py
+└── resources/
+	└── sales_data.csv
+
 ```
 
 ## Files Required for the Lab
